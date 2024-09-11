@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/student.dart';
 
 class ApiService {
-  final String apiUrl = 'http://<YOUR_SERVER_IP>:5000/api/students';
+  final String apiUrl = 'http://192.168.68.106:5000/api/students';
 
   Future<List<Student>> fetchStudents() async {
     final response = await http.get(Uri.parse(apiUrl));
